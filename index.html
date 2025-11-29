@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas JSON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cambio de Divisas</h1>
+        <p class="subtitle">Powered by JSON Data</p>
+
+        <div class="input-group">
+            <label for="monto">Monto (USD):</label>
+            <input type="number" id="monto" placeholder="Ingresa cantidad..." value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="moneda">Convertir a:</label>
+            <select id="moneda">
+                <option value="MXN">Peso Mexicano (MXN)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="COP">Peso Colombiano (COP)</option>
+                <option value="JPY">Yen Japonés (JPY)</option>
+            </select>
+        </div>
+
+        <button id="btnConvertir">Calcular Conversión</button>
+
+        <div id="resultado">
+            <p>Resultado:</p>
+            <h2 id="textoResultado">$0.00</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
